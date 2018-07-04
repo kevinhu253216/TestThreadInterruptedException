@@ -2,7 +2,8 @@ import java.util.Date;
 
 /**
  * output: 程序运行后，每秒输出一次时间，十秒后结束
- * thread.Interrupt(); 不常用
+ * thread.interrupt(); 不常用 //等当前执行完再中断
+ * thread.stop(); //强行中断,类似于任务管理器中强行中断进程
  */
 public class TestThreadInterruptedException {
     public static void main(String[] args){
